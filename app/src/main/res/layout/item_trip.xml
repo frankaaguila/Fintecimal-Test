@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/visited_card"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="20dp"
+        card_view:cardCornerRadius="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#FFF"
+        >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/status_dot"
+            android:background="@drawable/status_dot_true"
+            android:layout_marginStart="14dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/visited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Visitado"
+            android:textColor="@color/green"
+            android:textSize="11sp"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/streetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calle 123"
+            android:textSize="13sp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/dark"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp" />
+
+        <TextView
+            android:id="@+id/suburb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/roboto"
+            android:text="Suburb"
+            android:textColor="#AAA"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow"
+            android:layout_gravity="end"
+            android:padding="30dp"
+            android:background="@android:color/transparent"
+            tools:ignore="ContentDescription" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
